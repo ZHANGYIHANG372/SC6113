@@ -7,10 +7,13 @@ def index():
 @app.route("/main",methods=['GET','POST'])
 def main():
   return(render_template("main.html"))
-
+@app.route("/deposit",methods=['GET','POST'])
+def deposit():
+  return(render_template("deposit.html"))
 @app.route("/transfermoney",methods=['GET','POST'])
 def transfermoney():
   return(render_template("transfermoney.html"))
+
 
 if __name__ == "__main__":
   app.run() 
